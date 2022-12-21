@@ -1,0 +1,29 @@
+#content, #confirmation {
+    width: 500px;
+    height: 300px;
+    font-family: Arial;
+    font-size: 12px;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    background-color: lightblue;
+}
+
+#form1, #form2 {
+    border: 1px solid black;
+}
+
+form {
+    width: 400px;
+    padding: 10px;
+    margin: 10px;
+}
+
+label, input {
+    padding: 10px;
+    text-align: start;
+}
+
+#confirmation {
+    text-align: center;
+}

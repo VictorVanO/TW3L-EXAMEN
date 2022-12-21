@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Réservation</title>
+</head>
+<body>
+    <div id="content">
+        <h1>Réservation</h1>
+        <form method="post" id="form1" action="/reservation">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <label for="destination">Destination</label>
+                        </td>
+                        <td>
+                            <input type="text" name="destination" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="nbseat">Nombre de places</label>
+                        </td>
+                        <td>
+                            <input type="number" name="nbseat" id="nbseat" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="assurance">Assurance</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" name="assurance" id="assurance" >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" value="Etape suivante" formaction="/reservation/">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+        <button id="bt_total">Caculer le total</button>
+        <div id="total"></div>
+    </div>
+    <script src="util.js"></script>
+</body>
+</html>

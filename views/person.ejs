@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Identification des personnes</title>
+</head>
+<body>
+    <div id="content">
+        <h3>Encodage des voyageurs</h3>
+        <form action="/persons" id="form2" method="post">
+            <table>
+                <% for (let i = 0; i < userNumber; i++) { %>
+                    <tr>
+                        <td>
+                            <label for="name">Nom</label>
+                        </td>
+                        <td>
+                            <input type="text" name="name"  >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="age">Age</label>
+                        </td>
+                        <td>
+                            <input type="number" name="age"  >
+                        </td>
+                    </tr>
+                <% } %>
+            </table>
+            <div>
+                <input type="submit" value="Etape suivante">
+                <input type="submit" value="Annuler la réservation" formaction="/cancel" formmethod="get">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
